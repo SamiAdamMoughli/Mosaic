@@ -130,3 +130,4 @@ Use only on systems you own or have explicit written authorisation to test.
 Comply with all applicable laws. The scope enforcement built into this tool is a
 technical safeguard, not a substitute for legal authorisation.
 # Mosaic
+# Mosaic

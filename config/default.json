@@ -1,0 +1,32 @@
+{
+  "providers": {
+    "anthropic": {
+      "api_key_env": "ANTHROPIC_API_KEY"
+    },
+    "openai": {
+      "api_key_env": "OPENAI_API_KEY"
+    },
+    "google": {
+      "api_key_env": "GOOGLE_API_KEY"
+    },
+    "perplexity": {
+      "api_key_env": "PERPLEXITY_API_KEY"
+    }
+  },
+  "agent_models": {
+    "orchestrator":          {"provider": "openai",      "model": "o3"},
+    "validator":             {"provider": "openai",      "model": "gpt-4o-mini"},
+    "osint_collector":       {"provider": "perplexity",  "model": "sonar-pro"},
+    "dns_enumerator":        {"provider": "google",      "model": "gemini-2.5-flash"},
+    "network_mapper":        {"provider": "google",      "model": "gemini-2.5-flash"},
+    "port_scanner":          {"provider": "google",      "model": "gemini-2.5-flash"},
+    "service_fingerprinter": {"provider": "openai",      "model": "gpt-4o-mini"},
+    "web_recon":             {"provider": "anthropic",   "model": "claude-sonnet-4-6"},
+    "report_synthesiser":    {"provider": "google",      "model": "gemini-2.5-pro"}
+  },
+  "tools": {
+    "required": ["nmap", "subfinder", "httpx", "nuclei"],
+    "recommended": ["amass", "dnsx", "masscan", "rustscan", "katana",
+                    "ffuf", "gowitness", "gau", "theHarvester", "fierce"]
+  }
+}

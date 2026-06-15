@@ -1,0 +1,26 @@
+# API keys and secrets
+.env
+
+# Campaign output — contains sensitive findings (IPs, subdomains, credentials)
+runs/
+
+# Compiled Go runner
+recon-runner
+tools-runner/recon-runner
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.mypy_cache/
+
+# Go
+tools-runner/vendor/
+
+# Claude Code local settings (permissions, personal overrides)
+.claude/settings.local.json
+
+# macOS
+.DS_Store
